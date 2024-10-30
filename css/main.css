@@ -66,9 +66,19 @@ a{
   height: 40px ;
 }
 
+@media (min-width: 880px) {
+	.swiper_button-wrapper{
+    display: flex;
+  }
+}
+
 @media (max-width: 880px) {
 	.arrow {
     height: 25px ;
+  }
+
+  .swiper_button-wrapper{
+    display: none;
   }
 }
 
@@ -593,10 +603,13 @@ a{
 .header_mobile{
   position: fixed;
   width: 100%;
-  margin-top: 24px;
   padding: 0 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
+  background-color: #FFFFFF;
+  z-index: 40;
 }
 
 .logo_moblie{
