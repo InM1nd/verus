@@ -353,6 +353,17 @@ a{
   text-transform: uppercase;
 }
 
+.hero_button:hover{
+  color: #004CBB;
+  border-color:  #004CBB;
+  transition: color 0.2s; 
+}
+
+.hero_button:hover .arrow path {
+  transition: color 0.2s; 
+  fill: #004CBB; 
+}
+
 @media (max-width: 2200px) {
 	.title{
     font-size: 180px;
@@ -369,11 +380,15 @@ a{
 	.title{
     font-size: 140px;
   }
+
+  .text {
+    font-size: 20px; /* Размер текста */
+  }
 }
 
 @media (max-width: 1440px) {
 	.title{
-    font-size: 100px;
+    font-size: 120px;
   }
 }
 
@@ -518,8 +533,16 @@ a{
 
 @media (max-width: 1620px) {
 	.logo{
-    width: 100px;
+    width: 80px;
   }
+
+  .nav {
+    padding-top: 20px;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
 }
 
 @media (max-width: 1440px) {
@@ -606,7 +629,7 @@ a{
 .about_content{
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px;
+  gap: 50px;
   
   padding-top: 160px;
 }
@@ -619,6 +642,20 @@ a{
 
   font-weight: 400;
   font-size: 22px;
+}
+
+@media (max-width: 1620px) {
+  .about_wrapper{
+    padding: 100px 0;
+  }
+
+  .about_content{   
+    padding-top: 100px;
+  }
+
+  .about_card{
+    font-size: 20px;
+  }
 }
 
 
@@ -719,7 +756,7 @@ a{
 .values_content {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Space between grid items */
+  gap: 50px; /* Space between grid items */
   padding-top: 100px;
   margin: 0 auto; /* Center the grid */
 }
@@ -740,6 +777,16 @@ a{
   font-weight: 400;
   font-size: 22px;
   color: #555;
+}
+
+@media (max-width: 1620px) {
+  .values_wrapper{
+    padding: 70px 0;
+  }
+
+  .values_card p {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1280px) { 
@@ -974,6 +1021,16 @@ a{
   
 }
 
+@media (max-width: 1620px) {
+  .services_wrapper{
+    padding: 70px 0;
+  }
+
+  .faq-desp{
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 1280px) {
   .services{
     padding: 0 16px;
@@ -1083,6 +1140,16 @@ a{
   line-height: 120%;
 }
 
+@media (max-width: 1620px) {
+  .aspects_wrapper{
+    padding: 70px 0;
+  }
+
+  .aspects_card-text{
+    font-size: 20px;
+  }
+}
+
 
 @media (max-width: 1280px) {
   .aspects{
@@ -1163,14 +1230,14 @@ a{
   
   padding-bottom: 0;
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 730px;
 }
 
 .footer_wrapper{
   display: flex;
   justify-content: end;
   padding: 50px;
-  padding-bottom: 130px;
+  padding-bottom: 100px;
   width: 100%;
 
 }
@@ -1215,6 +1282,11 @@ a{
   outline: none;
 }
 
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-bottom: 1px solid #004CBB;
+}
+
 .contact-form .row {
   display: flex;
   gap: 10px;
@@ -1227,7 +1299,7 @@ a{
 .contact-form textarea {
   resize: none;
   height: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .contact-form .submit-btn {
@@ -1239,28 +1311,35 @@ a{
   letter-spacing: -0.04em;
   color: black;
   text-decoration: none;
-  border: none;
   background: none;
   padding: 0;
   cursor: pointer;
   outline: none;
   width: 100%;
+  border: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px black solid ;
+}
+
+.submit-btn{
+  
 }
 
 .contact-form .submit-btn span {
   font-size: 24px;
 }
 
-.contact-form .submit-btn:hover .arrow {
-  transform: translateX(5px);
+.contact-form .submit-btn:hover{
+  color: #004CBB;
+  border-color:  #004CBB;
+  transition: color 0.2s; 
 }
 
-
-.underline {
-  height: 1px;
-  background-color: black;
-  margin-top: 8px;
+.submit-btn:hover .arrow path {
+  transition: color 0.2s; 
+  fill: #004CBB; 
 }
+
 
 .footer_contact{
   display: flex;
@@ -1308,6 +1387,16 @@ a{
   line-height: 120%
 }
 
+.footer_bottom-adds{
+  display: flex;
+  gap: 100px
+}
+
+.footer_bottom-docs{
+  display: flex;
+  gap: 40px
+}
+
 @media (max-width: 1280px) {
   .footer {
     height: 100%;
@@ -1321,6 +1410,7 @@ a{
 @media (max-width: 880px) {
   .footer{
     height: auto;
+    min-height: auto;
   }
 
   .footer_wrapper{
