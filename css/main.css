@@ -815,6 +815,7 @@ a{
   font-size: 40px;
   line-height: 120%;
   text-transform: uppercase;
+  margin-bottom: 120px;
 }
 
 
@@ -982,6 +983,11 @@ a{
     padding: 90px 0;
     width: 100%;
   }
+
+  .services_header{
+    padding-bottom: 40px;
+    margin: 0;
+  }
 }
 
 
@@ -992,7 +998,6 @@ a{
 
   .services_header{
     font-size: 24px;
-    padding-bottom: 40px;
   }
 
   .faq-container {
