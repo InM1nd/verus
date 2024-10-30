@@ -1,8 +1,9 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2.3, // По умолчанию 3.3 слайда
+  slidesPerView: 2,
+  spaceBetween: 20,
   breakpoints: {
     1280: {
-      slidesPerView: 3.3, // При ширине экрана 1280px и больше - 2.3 слайда
+      slidesPerView: 3,
     },
   },
   navigation: {

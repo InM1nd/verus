@@ -21,6 +21,7 @@ a{
 .swiper {
 	width: 100%;
 	height: 100%;
+  padding-right: 150px;
 }
 
 .swiper-slide {
@@ -28,11 +29,12 @@ a{
 	font-size: 18px;
 	
   border-right: 1px solid #555 ;
-	
+	height: auto;
 	display: flex;
   flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	text-align: start;
+  width: 100%;
 
   padding-right: 50px;
 }
@@ -46,12 +48,20 @@ a{
   gap:50px
 }
 
-.swiper-button-prev, 
-.swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
   position: initial;
   margin: 0;
   width: 60px;
+  height: 60px;
 }
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 24px;
+}
+
 
 .arrow {
   height: 40px ;
@@ -259,6 +269,11 @@ a{
   margin-bottom: 45px;
 }
 
+.verus_title{
+  width: 80%;
+  height: fit-content;
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -392,6 +407,16 @@ a{
   }
 }
 
+@media (min-width: 1280px) {
+  .verus_title{
+    display: block;
+  }
+
+  .title_p{
+    display: none;
+  }
+  }
+
 @media (max-width: 1280px) {
   .hero {
     padding: 80px 16px;
@@ -404,6 +429,16 @@ a{
     width: 100%;
     display: flex;
     justify-content: flex-start;
+  }
+
+  .verus_title{
+    display: none;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .title_p{
+    display: block;
   }
 
   .grid-layout {
@@ -756,7 +791,7 @@ a{
 .values_content {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 50px; /* Space between grid items */
+  gap: 100px 50px; /* 50px между строками, 30px между колонками */
   padding-top: 100px;
   margin: 0 auto; /* Center the grid */
 }
@@ -1274,8 +1309,8 @@ a{
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
+  padding: 3px;
+  margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid black;
   font-size: 20px;
@@ -1371,7 +1406,9 @@ a{
   color: #636363;
 }
 
-
+.footer_contact-text:hover{
+  color: #000;
+}
 
 .footer_bottom{
   display: flex;
