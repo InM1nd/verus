@@ -37,7 +37,7 @@
         <a href="#values" class="nav_link">VALUES</a>
         <a href="#service" class="nav_link">SERVICE</a>
         <a href="#aspects" class="nav_link">ASPECTS</a>
-        <a href="#contact" class="nav_link">CONTACT</a>
+        <a href="#footer" class="nav_link">CONTACT</a>
       </nav>
     </div>
 
@@ -59,7 +59,7 @@
           <li class="menu_burger-element"><a class="menu_link" href="#values">VALUES</a></li>
           <li class="menu_burger-element"><a class="menu_link" href="#service">SERVICE</a></li>
           <li class="menu_burger-element"><a class="menu_link" href="#aspects">ASPECTS</a></li>
-          <li class="menu_burger-element"><a class="menu_link" href="#contact">CONTACT</a></li>
+          <li class="menu_burger-element"><a class="menu_link" href="#footer">CONTACT</a></li>
         </ul>	
       </nav>
       <div>
@@ -104,7 +104,10 @@
               <img src="./img/img4.png" alt="Фото 4" class="hero_img">
             </div>
         </div>
-        <button class="button">say hi</button>
+        <button class="hero_button">
+          say hi
+          <img class="arrow" src="./img/arrow.svg"/>
+        </button>
     </div>
   </section>
 
@@ -375,14 +378,18 @@
 
 
   <section class="aspects dark" id="aspects">
-    <div class="aspects_wrapper">
-      <h2 class="aspects_header">
-        Key aspects
-      </h2>
-      <!-- <div class="swiper-button-prev"></div> -->
-      <!-- <div class="swiper-button-next"></div> -->
+    <div class="aspects_wrapper">   
+      <div class="aspect_top-wrapper">
+        <h2 class="aspects_header">
+          Key aspects
+        </h2>
+        <div class="swiper_button-wrapper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
       <div class="aspects_content">
-
+        
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -412,7 +419,7 @@
                     Verus Property focuses on identifying and acquiring prime real estate assets across Dubai, ranging from luxury residential developments to high-end commercial properties. Our strategic approach ensures that investments are secure and positioned for significant appreciation over time.
                   </p>
                 </div>
-                
+
               </div>
             </div>
 
@@ -495,7 +502,8 @@
             <textarea id="message" name="message" required></textarea>
         
             <button type="submit" class="submit-btn">
-              SAY HI <span class="arrow">&#8594;</span>
+              SAY HI 
+              <img class="arrow" src="./img/arrow.svg"/>
             </button>
             <div class="underline"></div>
           </form>

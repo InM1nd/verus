@@ -41,6 +41,28 @@ a{
   gap:60px;
 }
 
+.swiper_button-wrapper{
+  display: flex;
+  gap:50px
+}
+
+.swiper-button-prev, 
+.swiper-button-next{
+  position: initial;
+  margin: 0;
+  width: 60px;
+}
+
+.arrow {
+  height: 40px ;
+}
+
+@media (max-width: 880px) {
+	.arrow {
+    height: 25px ;
+  }
+}
+
 /* MENU */
 
 .menu_burger-close-wrapper{
@@ -150,7 +172,7 @@ a{
 
 .menu_burger-contact-text{
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 120%
 }
 
@@ -312,7 +334,7 @@ a{
   object-fit: cover;
 }
 
-.button {
+.hero_button {
   grid-column: 6 / 11; /* занимает 4 столбца */
   grid-row: 10 / 11;
   border: 0;
@@ -321,7 +343,7 @@ a{
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
 
   background: none;
   color: #000;
@@ -403,7 +425,7 @@ a{
   }
 
   /* Кнопка занимает всю ширину */
-  .button {
+  .hero_button{
     grid-column: 1 / 6;
     grid-row: 10 / 11;
     font-size: 40px; /* Уменьшаем шрифт для мобильных */
@@ -726,9 +748,14 @@ a{
     width: 100%;
   }
 
+  .values_content {
+    gap: 50px; /* Space between grid items */
+  }
+
   .values_card {
     max-width: 100%;
     border-bottom: 1px solid #000;
+    padding-bottom: 40px;
   }
 }
 
@@ -760,7 +787,6 @@ a{
   .values_card p {
     font-size: 16px;
     margin-top: 12px;
-    margin-bottom: 40px;
   }
 }
 
@@ -852,8 +878,9 @@ a{
 }
 
 .faq-desp-wrapper{
-	padding: 40px;
-	padding-top: 0;
+	/* padding: 40px; */
+	padding-top: 40px;
+  padding-bottom: 40px;
 	display: flex;
 	gap: 20px;
 	flex-direction: column;
@@ -878,7 +905,6 @@ a{
 	font-weight: 400;
 
   display: flex;
-  justify-content: end;
 
   transition: height 0.3s ease;
 }
@@ -987,6 +1013,7 @@ a{
   .faq-desp-wrapper{
     font-size: 16px;
     padding: 0;
+    padding-top: 20px;
   }
 
   .faq-desp{
@@ -1009,6 +1036,7 @@ a{
 .aspects_wrapper{
   padding: 120px 0;
   width: 80%;
+  position: relative;
 }
 
 .aspects_header{
@@ -1018,6 +1046,13 @@ a{
   text-transform: uppercase;
   color: #005DE7;
 
+  
+}
+
+.aspect_top-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 120px;
 }
 
@@ -1071,6 +1106,14 @@ a{
     display: flex;
     flex-direction: column;
     gap:50px;
+  }
+
+  .aspects_header{
+    font-size: 24px;
+  }
+
+  .aspect_top-wrapper{
+    margin-bottom: 50px;
   }
 
   .aspects_card-title{
@@ -1132,7 +1175,7 @@ a{
 
 
 .contact-form {
-  /* width: 300px; */
+  /* width: 550px; */
   text-align: left;
   padding-top: 60px;
 }
@@ -1141,7 +1184,7 @@ a{
   display: block;
   margin-bottom: 5px;
   color: black;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .contact_form-title{
@@ -1159,7 +1202,7 @@ a{
   margin-bottom: 15px;
   border: none;
   border-bottom: 1px solid black;
-  font-size: 16px;
+  font-size: 20px;
   outline: none;
 }
 
@@ -1175,14 +1218,15 @@ a{
 .contact-form textarea {
   resize: none;
   height: 60px;
+  margin-bottom: 100px;
 }
 
 .contact-form .submit-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 88px;
   letter-spacing: -0.04em;
   color: black;
   text-decoration: none;
@@ -1191,6 +1235,7 @@ a{
   padding: 0;
   cursor: pointer;
   outline: none;
+  width: 100%;
 }
 
 .contact-form .submit-btn span {
@@ -1201,11 +1246,6 @@ a{
   transform: translateX(5px);
 }
 
-.arrow {
-  display: inline-block;
-  margin-left: 10px;
-  transition: transform 0.3s ease;
-}
 
 .underline {
   height: 1px;
@@ -1240,6 +1280,7 @@ a{
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
+  color: #636363;
 }
 
 
@@ -1259,7 +1300,13 @@ a{
 }
 
 @media (max-width: 1280px) {
+  .footer {
+    height: 100%;
+  }
 
+  .footer_content{
+    width: 100%;
+  }
 }
 
 @media (max-width: 880px) {
@@ -1280,6 +1327,7 @@ a{
     padding: 0 16px;
     padding-top: 60px;
     padding-bottom: 32px;
+    justify-content: center;
   }
 
   .footer_contact-mobile{
@@ -1323,6 +1371,19 @@ a{
 
   .contact-form textarea {
     margin-bottom: 50px;
+  }
+
+  .contact-form label {
+    font-size: 18px;
+  }
+
+  .contact-form .submit-btn {
+    font-size: 40px;
+  }
+
+  .row{
+    width: 100%;
+    flex-direction: column;
   }
 }
 
