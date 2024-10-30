@@ -32,7 +32,6 @@ a{
 	height: auto;
 	display: flex;
   flex-direction: column;
-	justify-content: space-between;
 	text-align: start;
   width: 100%;
 
