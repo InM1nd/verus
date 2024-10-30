@@ -483,6 +483,10 @@ a{
   text-decoration: none;
 }
 
+.nav_link.active {
+  text-decoration: underline;
+}
+
 .nav_link:hover{
   color: #005DE7;
   transition: color 0.2s;
