@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 
+	<title>Skelya</title>
+	<link
+	 rel="stylesheet"
+	 href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+	 integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+	 crossorigin="anonymous"
+	 referrerpolicy="no-referrer"
+ 	/>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+	<script src="https://cdn.jsdelivr.net/npm/accordion@3.0.2/src/accordion.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/accordion@3.0.2/src/accordion.min.css" rel="stylesheet">
+	<link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+	<link rel="stylesheet" href="/main.css">
+
+  </head>
+  <body>
+
+    <!-- Левое навигационное меню -->
+    <div class="sidebar">
+      <img src="/img/Logo.png" alt="Verus Logo" class="logo blue-logo" />
+      <nav class="nav">
+        <a href="#about" class="nav_link">ABOUT</a>
+        <a href="#values" class="nav_link">VALUES</a>
+        <a href="#service" class="nav_link">SERVICE</a>
+        <a href="#aspects" class="nav_link">ASPECTS</a>
+        <a href="#contact" class="nav_link">CONTACT</a>
+      </nav>
+    </div>
+
+    <div class="header_mobile">
+      <img src="/img/Logo.png" alt="Verus Logo" class="logo_moblie blue-logo" />
+      <button class="header_mobile-button" type="button" id="toggleBtn">
+        <img src="/img/menu_button.svg" class="mobile_menu-icon"/>
+      </button>
+    </div>
+
+    <div id="menu">
+      <div class="menu_burger-close-wrapper">
+        <img src="/img/Logo.png" alt="Verus Logo" class="logo_moblie blue-logo" />
+        <button class="menu_burger-close" type="button" id="closeBtn"><img src="/img/cross.svg"></button>
+      </div>
+      <nav class="menu_burger-nav">
+        <ul class="menu_burger-list">
+          <li class="menu_burger-element"><a class="menu_link" href="#about">ABOUT</a></li>
+          <li class="menu_burger-element"><a class="menu_link" href="#values">VALUES</a></li>
+          <li class="menu_burger-element"><a class="menu_link" href="#service">SERVICE</a></li>
+          <li class="menu_burger-element"><a class="menu_link" href="#aspects">ASPECTS</a></li>
+          <li class="menu_burger-element"><a class="menu_link" href="#contact">CONTACT</a></li>
+        </ul>	
+      </nav>
+      <div>
+        <div class="menu_burger-contact-list">
+          <div class="menu_burger-contact-wrapper">
+            <p class="menu_burger-contact-title">call</p>
+            <a class="menu_burger-contact-text">+38 067 834 88 11</a>
+          </div>
+          <div  class="menu_burger-contact-wrapper">
+            <p class="menu_burger-contact-title">Write</p>
+            <a class="menu_burger-contact-text">email.@gmail.com</a>
+          </div>
+          <div class="menu_burger-contact-wrapper">
+            <p class="menu_burger-contact-title">Meet</p>
+            <a class="menu_burger-contact-text">City Country Street House</a>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+
+
+  <section class="hero light" id="hero">
+      <div class="title">VERUS PROPERTY</div>
+      <div class="grid-layout">
+        <div class="item1">
+          <img src="./img/img1.png" alt="Фото 1" class="hero_img">
+        </div>
+        <div class="item2">
+          <img src="./img/img2.png" alt="Фото 2" class="hero_img">
+        </div>
+        <div class="item3">
+          <img src="./img/img3.png" alt="Фото 3" class="hero_img">
+        </div>
+        <div class="item4">
+            <div class="text">
+              Invest Smart, </br>
+              Grow Strong with </br>
+              verus property in dubai
+            </div>
+            <div class="image">
+              <img src="./img/img4.png" alt="Фото 4" class="hero_img">
+            </div>
+        </div>
+        <button class="button">say hi</button>
+    </div>
+  </section>
+
+  <section class="about dark" id="about">
+    <div class="about_wrapper">
+      <h2 class="about_header">
+        we are a <span class="header-color">premier real estate investment</span> company based in Dubai
+      </h2>
+      <div class="about_content">
+        <div class="about_card">
+          <div class="about_card-wrapper">
+            We specializes in offering high-yield investment opportunities in the dynamic and rapidly growing Dubai real estate market. 
+          </div>
+          <div>
+            With a deep understanding of the local property landscape and a commitment to excellence, Verus Property connects global investors with lucrative real estate assets that promise strong returns and long-term value.
+          </div> 
+        </div>
+        <div class="about_mobile-photos">
+          <div class="about_mobile-pic pic_1">
+            <img src="./img/img1.png" alt="Фото 1" class="hero_img">
+          </div>
+          <div class="about_mobile-pic pic_2">
+            <img src="./img/img2.png" alt="Фото 2" class="hero_img">
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about_card-wrapper">
+            Whether you are a seasoned investor looking to diversify your portfolio or a first-time investor seeking to capitalize on Dubai's real estate boom. 
+          </div>
+          <div class="about_card-wrapper">
+            Verus Property is your trusted partner in navigating the opportunities and challenges of this thriving market.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values light" id="values">
+    <div class="values_wrapper">
+      <h2 class="values_header">
+        our <span class="header-color">values</span>
+      </h2>
+      <div class="values_content">
+        <div class="values_card">
+          <h3>Innovation</h3>
+          <p>
+            We embrace innovation to stay ahead in the dynamic real estate market, offering cutting-edge solutions and forward-thinking investment opportunities.
+          </p>
+        </div>
+        <div class="values_card">
+          <h3>Excellence</h3>
+          <p>
+            We strive for excellence in everything we do, from our investment strategies to customer service, delivering superior value and results.
+          </p>
+        </div>
+        <div class="values_card">
+          <h3>Client-Centricity</h3>
+          <p>
+            Our clients' success is our top priority. We are dedicated to understanding their needs and providing tailored strategies that align with their investment goals.
+          </p>
+        </div>
+        <div class="values_card">
+          <h3>Integrity</h3>
+          <p>
+            We uphold the highest standards of honesty and transparency in every aspect of our business, ensuring trust and confidence with our clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services_wrapper">
+      <h2 class="services_header">
+        our <span class="header-color">services</span>
+      </h2>
+
+      <div class="accordion_container container">
+        <div class="faq-container grid">
+  
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Real Estate Investment Advisory
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - Personalized investment strategies tailored to individual goals and risk profiles. 
+                </p>
+                <p class="faq-desp-content">
+                  - In-depth market analysis and insights into the Dubai real estate market. 
+                </p>
+                <p class="faq-desp-content">
+                  - Guidance on selecting high-potential properties for maximum return on investment. 
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Property Acquisition and Management
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - End-to-end support in acquiring prime residential and commercial properties in Dubai. 
+                </p>
+                <p class="faq-desp-content">
+                  - Professional property management services, including tenant management, maintenance, and rent collection. 
+                </p>
+                <p class="faq-desp-content">
+                  - Optimization of property performance to ensure steady cash flow and asset appreciation. 
+                </p>
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Portfolio Management
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - Comprehensive portfolio management services for investors looking to diversify their real estate holdings. 
+                </p>
+                <p class="faq-desp-content">
+                  - Regular performance reviews and adjustments to align with market conditions and client objectives. 
+                </p>
+                <p class="faq-desp-content">
+                  - Detailed reporting and analysis to track portfolio growth and returns. 
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Development Consulting
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - Expert advice on property development projects, from initial planning to execution. 
+                </p>
+                <p class="faq-desp-content">
+                  - Feasibility studies, project management, and coordination with architects, contractors, and regulatory bodies. 
+                </p>
+                <p class="faq-desp-content">
+                  - Strategies to maximize the profitability and success of development ventures. 
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Legal and Regulatory Assistance
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - Guidance on navigating Dubai’s real estate laws, regulations, and compliance requirements. 
+                </p>
+                <p class="faq-desp-content">
+                  - Assistance with legal documentation, contracts, and due diligence processes. 
+                </p>
+                <p class="faq-desp-content">
+                  - Support in obtaining necessary permits and approvals for property transactions. 
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Market Research and Analysis
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - Regular reports on market trends, property values, and emerging investment opportunities in Dubai. 
+                </p>
+                <p class="faq-desp-content">
+                  - Custom research projects tailored to specific client needs and interests. 
+                </p>
+                <p class="faq-desp-content">
+                  - Competitive analysis to help clients make informed decisions. 
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Financing and Mortgage Solutions
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - Assistance in securing financing options and mortgage solutions for property investments. 
+                </p>
+                <p class="faq-desp-content">
+                  - Partnerships with leading financial institutions to offer competitive rates and terms. 
+                </p>
+                <p class="faq-desp-content">
+                  - Consultation on financing strategies to enhance investment outcomes. 
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="faq-item">
+            <header class="faq-header">  
+              <h4 class="faq-header-title">
+                Exit Strategy Planning
+              </h4>
+              <i class="ri-add-line faq-icon"></i>
+            </header>
+            <div class="faq-desp">
+              <div class="faq-desp-wrapper">
+                <p class="faq-desp-content">
+                  - Development of tailored exit strategies to optimize return on investment. 
+                </p>
+                <p class="faq-desp-content">
+                  - Market timing analysis and advice on the best time to divest properties. 
+                </p>
+                <p class="faq-desp-content">
+                  - Support in selling or liquidating assets while minimizing tax liabilities and maximizing profits. 
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          
+      </div>
+    </div>
+  </section>
+
+
+  <section class="aspects dark" id="aspects">
+    <div class="aspects_wrapper">
+      <h2 class="aspects_header">
+        Key aspects
+      </h2>
+      <!-- <div class="swiper-button-prev"></div> -->
+      <!-- <div class="swiper-button-next"></div> -->
+      <div class="aspects_content">
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <span class="aspects_card-title">Strategic Investments</span>
+                  <p class="aspects_card-text">
+                    Verus Property focuses on identifying and acquiring prime real estate assets across Dubai, ranging from luxury residential developments to high-end commercial properties. Our strategic approach ensures that investments are secure and positioned for significant appreciation over time.
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <span class="aspects_card-title">Expertise and Experience</span>
+                  <p class="aspects_card-text">
+                    Backed by a team of seasoned real estate professionals, Verus Property leverages extensive market knowledge and industry connections to navigate the complexities of the Dubai property market. Our expertise allows us to offer investment opportunities tailored to meet our clients' unique needs and goals.
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <span class="aspects_card-title">Client-Centric Approach</span>
+                  <p class="aspects_card-text">
+                    At Verus Property, we prioritize our clients' success. We provide personalized investment strategies, comprehensive market analysis, and ongoing support to ensure our clients achieve their financial objectives. Our transparent and ethical business practices build trust and long-term relationships with our investors.
+                  </p>
+                </div>
+                
+                <div class="swiper-slide">
+                  <span class="aspects_card-title">Strategic Investments</span>
+                  <p class="aspects_card-text">
+                    Verus Property focuses on identifying and acquiring prime real estate assets across Dubai, ranging from luxury residential developments to high-end commercial properties. Our strategic approach ensures that investments are secure and positioned for significant appreciation over time.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- /* MOBILE */ -->
+
+            <div class="aspects_card-mobile">
+              <span class="aspects_card-title">Strategic Investments</span>
+                <p class="aspects_card-text">
+                  Verus Property focuses on identifying and acquiring prime real estate assets across Dubai, ranging from luxury residential developments to high-end commercial properties. Our strategic approach ensures that investments are secure and positioned for significant appreciation over time.
+                </p>
+            </div>
+
+            <div class="aspects_card-mobile">
+              <span class="aspects_card-title">Expertise and Experience</span>
+                <p class="aspects_card-text">
+                  Backed by a team of seasoned real estate professionals, Verus Property leverages extensive market knowledge and industry connections to navigate the complexities of the Dubai property market. Our expertise allows us to offer investment opportunities tailored to meet our clients' unique needs and goals.
+                </p>
+            </div>
+
+            <div class="aspects_card-mobile">
+              <span class="aspects_card-title">Client-Centric Approach</span>
+                <p class="aspects_card-text">
+                  At Verus Property, we prioritize our clients' success. We provide personalized investment strategies, comprehensive market analysis, and ongoing support to ensure our clients achieve their financial objectives. Our transparent and ethical business practices build trust and long-term relationships with our investors.
+                </p>
+            </div>
+
+            <div class="aspects_card-mobile">
+              <span class="aspects_card-title">Strategic Investments</span>
+                <p class="aspects_card-text">
+                  Verus Property focuses on identifying and acquiring prime real estate assets across Dubai, ranging from luxury residential developments to high-end commercial properties. Our strategic approach ensures that investments are secure and positioned for significant appreciation over time.
+                </p>
+            </div>
+
+            
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer light" id="footer">
+    <div class="footer_wrapper">
+      <div class="footer_content">
+        <div class="footer_contact">
+          <div>
+            <p class="footer_contact-title">call</p>
+            <a class="footer_contact-text">+38 067 834 88 11</a>
+          </div>
+          <div>
+            <p class="footer_contact-title">Write</p>
+            <a class="footer_contact-text">email.@gmail.com</a>
+          </div>
+          <div>
+            <p class="footer_contact-title">Meet</p>
+            <a class="footer_contact-text">City Country Street House</a>
+          </div>
+        </div>
+        
+        <div>
+          <span class="contact_form-title">Let's Discuss:</span>
+          <form class="contact-form">
+            <label for="name">YOUR FULL NAME</label>
+            <input type="text" id="name" name="name" required>
+        
+            <div class="row">
+              <div>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                <label for="phone">PHONE</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+        
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <button type="submit" class="submit-btn">
+              SAY HI <span class="arrow">&#8594;</span>
+            </button>
+            <div class="underline"></div>
+          </form>
+        </div>  
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="footer_contact-mobile">
+        <div>
+          <p class="footer_contact-title">call</p>
+          <a class="footer_contact-text">+38 067 834 88 11</a>
+        </div>
+        <div>
+          <p class="footer_contact-title">Write</p>
+          <a class="footer_contact-text">email.@gmail.com</a>
+        </div>
+        <div>
+          <p class="footer_contact-title">Meet</p>
+          <a class="footer_contact-text">City Country Street House</a>
+        </div>
+      </div>
+
+      <div class="footer_bottom-adds">
+        <span class="footer_bottom-label">© 2024 Verus Property</span>
+        <div class="footer_bottom-docs">
+          <a>Privacy</a>
+          <a>Term of use</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <script src="./js/sidebarColor.js"></script>
+  <script src="./js/acordion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+  <script src="./js/menu.js"></script>
+
+  </body>
+  </html>
