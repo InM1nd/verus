@@ -375,6 +375,8 @@ a{
   font-size: 100px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+
+  padding: 0;
 }
 
 .hero_button:hover{
@@ -1327,6 +1329,7 @@ a{
   border-bottom: 1px solid black;
   font-size: 20px;
   outline: none;
+  border-radius: 0;
 }
 
 .contact-form input:hover,
