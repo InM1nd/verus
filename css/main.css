@@ -289,7 +289,7 @@ a{
 
 .verus_title{
   width: 80%;
-  height: auto;
+  height: fit-content;
 }
 
 .grid-layout {
