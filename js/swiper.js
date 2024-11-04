@@ -1,9 +1,9 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 2.1,
   spaceBetween: 20,
   breakpoints: {
-    1440: {
-      slidesPerView: 3,
+    1920: {
+      slidesPerView: 3.1, // Показывает часть третьего слайда
     },
   },
   navigation: {
